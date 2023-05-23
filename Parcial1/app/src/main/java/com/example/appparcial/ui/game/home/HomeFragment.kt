@@ -1,4 +1,4 @@
-package com.example.appparcial.ui.game
+package com.example.appparcial.ui.game.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
