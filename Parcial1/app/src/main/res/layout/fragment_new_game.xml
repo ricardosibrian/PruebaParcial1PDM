@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".NewGameFragment">
+
+    <TextView
+        android:id="@+id/addTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_gap"
+        android:text="@string/add_new_game"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/big_gap"
+        android:background="@color/white"
+        android:textColorHint="@color/hint"
+        android:hint="Name"
+        android:layout_marginTop="@dimen/big_gap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextField1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:maxLength="35"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInput2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:textColorHint="@color/hint"
+        android:layout_marginStart="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/big_gap"
+        android:hint="Genre"
+        android:layout_marginTop="@dimen/intermediate_gap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextField2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:maxLength="35"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInput3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:textColorHint="@color/hint"
+        android:layout_marginStart="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/big_gap"
+        android:hint="Description"
+        android:layout_marginTop="@dimen/intermediate_gap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextInput2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextField3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:maxLength="250"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInput4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:textColorHint="@color/hint"
+        android:layout_marginStart="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/big_gap"
+        android:hint="Calification"
+        android:layout_marginTop="@dimen/intermediate_gap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextInput3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextField4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:maxLength="4"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addTracker"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_game"
+        android:textStyle="bold"
+        android:background="@color/secondColor"
+        android:textColor="@color/dark_blue"
+        android:textSize="20dp"
+        android:layout_marginTop="@dimen/big_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInput4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
