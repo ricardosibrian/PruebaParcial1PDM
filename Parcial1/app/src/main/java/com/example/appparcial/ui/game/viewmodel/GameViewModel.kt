@@ -61,6 +61,14 @@ class GameViewModel(private val repository: GameRepository): ViewModel() {
         status.value = INACTIVE
     }
 
+    // Funcion para implementar el RecyclerView
+    fun setSelectedGame(game: GameModel) {
+        name.value = game.name
+        genre.value = game.genre
+        description.value = game.description
+        calification.value = game.calification
+    }
+
     companion object {
         val Factory = viewModelFactory {
             initializer {
